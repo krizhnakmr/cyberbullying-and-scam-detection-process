@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERBULLYING LANGAUGE DETECTION
+</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('../static/pic1.png');background-size:100%">
+<nav class="navbar navbar-inverse" style="background:#0C3056">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a style="color:#FFF" class="navbar-brand" href="/home" style="text-transform: capitalize;font-size:25px;">RESUME SCREENING
+ </a>
+    </div>
+    <ul class="nav navbar-nav">
+    
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a style="color:#FFF"  href="/home" style="font-size:18px;"> HOME</a></li>
+      <li><a style="color:#FFF"  href="/" style="font-size:18px;"> LOGOUT</a></li>
+    </ul>
+  </div>
+</nav>
+<div style="background: #FFF;width: 80%;margin: 0 auto;padding: 60px;" >
+
+    <!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h3>The Predicted Msg is: <span class='alert alert-danger'>PROFILE IS REJECTED/MAY BE A SPAM</span></h3>
+			{% elif prediction==0 %}
+				<h3>The Predicted Msg is: <span class='alert alert-success'>CONGRATULATIONS!!SELECTED!!</span></h3>
+			{% endif %}
+		</div>
+</div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

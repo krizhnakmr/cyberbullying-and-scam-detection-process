@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Text Preprocessing and Feature Engineering for Spam Detection
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="og:title" content="Credit Card Default Exposer">
+        <meta name="author" content="VIKAS BHAT">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <style>
+
+            html{
+                position: relative;
+                min-height: 100%;
+            }
+
+            body{
+                margin: 0 0 100px;
+                padding: 25px;
+                background: url(../static/1.jpg);
+                background-size: 100%;
+            }
+            footer {
+                background-color: #0C3056;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 85px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            a{
+                text-decoration: none !important;
+            }
+
+            a:hover{
+                cursor: pointer;
+            }
+
+            .nav-link{
+                font-size: 17px;
+            }
+
+            .card{
+                border: 1px solid black;
+            }
+
+            .form-group .form-control{
+                border: 1px solid black;
+            }
+        </style>
+    
+    
+    </head>
+
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="background-color: #0C3056 !important;">
+            <a href="{{ url_for('home') }}" style="color: white;font-size: 25px;">RESUME SCREENING
+</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item active">
+                   <a href="/"  class="nav-link">Logout</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+           
+           <br><br>
+
+           <div class="container">
+
+           <center><h1>Upload Dataset</h1></center>
+
+           
+               <center style="background-color:#BAD3EE !important;padding: 50px;"> <form action="http://localhost:5000/preview" name="fs" id="fs" method="post" enctype=multipart/form-data>
+                       <br/>
+                      <input type="file" name="datasetfile" id="file1" required  class="form-control" /> 
+                       <br/>
+             <br/>
+             <br/>
+                    <input type="submit" style="margin-right:250px" class="btn btn-primary btn-large" value="UPLOAD DATSET"> 
+                      </form></center>
+           </div>
+
+           <footer>
+            <center><p style="color: white;font-size: 17px;font-weight: bold;margin-top: 10px;">Copyrights @ 2024</p></center>
+           
+        </footer>
+    </body>
+
+
+</html>

@@ -1,0 +1,347 @@
+<html>
+    <head>
+        <title>CYBERBULLYING LANGUAGE DETECTION
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="og:title" content="Credit Card Default Exposer">
+        <meta name="author" content="VIKAS BHAT">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <style>
+
+            html{
+                position: relative;
+                min-height: 100%;
+            }
+
+            body{
+                margin: 0 0 100px;
+                padding: 25px;
+                background: url(../static/1.jpg);
+                background-size: 100%;
+            }
+            footer {
+                background-color: #0C3056;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 85px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            a{
+                text-decoration: none !important;
+            }
+
+            a:hover{
+                cursor: pointer;
+            }
+
+            .nav-link{
+                font-size: 17px;
+            }
+
+            .card{
+                border: 1px solid black;
+            }
+
+            .form-group .form-control{
+                border: 1px solid black;
+            }
+        </style>
+    
+    
+    </head>
+
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="background-color: #0C3056 !important;">
+            <a href="{{ url_for('home') }}" style="color: white;font-size: 25px;">Text Preprocessing and Feature Engineering for Spam Detection
+</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item active">
+                   <a href="/"  class="nav-link">Logout</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+           
+           <br><br>
+
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="about-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Preview</h2>
+            </div>
+       
+     <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+   
+
+  <!-- Custom fonts for this theme -->
+  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+    <style>
+   #loading {
+   background: url('../static/ajax-loader.gif') no-repeat center center;
+   position: absolute;
+   top: 0;
+   left: 59;
+   height: 100%;
+   width: 86%;
+   z-index: 9999999;
+}
+   </style>
+  
+
+</head>
+ 
+<body id="page-top">
+
+  <!-- Navigation -->
+ 
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact" style="background-color:#BAD3EE !important;padding: 50px;">
+    <div class="container">
+        <h1 class="mt-5">SPAM MESSAGE DATASET</h1>
+        <div class="table-responsive mt-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        {% for header in csv_data[0] %}
+                        <th>{{ header }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in csv_data[1:] %}
+                    <tr>
+                        {% for cell in row %}
+                        <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+      </div>
+       
+  </section>
+  </br><br><br>
+ <div class="form-group" style="padding:0px 250px 10px 40px;height:200px">
+               <button type="button" id="myAnchor" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Here To Train Dataset</button>
+          </div>
+
+
+  
+<div class="container">
+ 
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+           
+         <center> <p><a href="/home" class="btn btn-warning">Training Completed Click Here to Predict </a></p></center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+   
+
+<!-- Loading indicator -->
+<div class="loading" id="loading">
+    <img src="static/loading.gif" alt="Loading...">
+</div>
+
+<style>
+    /* CSS for the loading indicator */
+    .loading {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 9999;
+    }
+    
+    .loading img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+document.getElementById("myAnchor").addEventListener("click", function(event) {
+    // Prevent the default anchor behavior
+    event.preventDefault();
+    
+    // Show loading indicator
+    document.getElementById("loading").style.display = "block";
+    
+    // Set the delay time before showing the modal (in milliseconds)
+    var delayTime = 1000; // 1 second
+    
+    // Wait for the delay before showing the modal
+    setTimeout(function() {
+        // Show the modal
+        $('#myModal').modal('show');
+        
+        // Hide loading indicator after the modal is shown
+        document.getElementById("loading").style.display = "none";
+    }, delayTime);
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+</body>
+
+      
+      
+      
+      
+      
+      
+      </div>
+          </div>
+        </div>
+      
+        
+         
+
+   
+        
+        
+        
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+        
+        
+               
+                
+              
+        
+        
+        
+        
+        
+        
+        
+     
+          <!-- End col-->
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+ 
+    
+             
+
+    
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+     
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+              
+              </p>
+            </div>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+            -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+   <!-- Vendor JS Files -->
+  <!-- Vendor JS Files -->
+ <script src="../static/vendor/jquerys/jquery.min.js"></script>
+  <script src="../static/vendor/bootstraps/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/jquery.easings/jquery.easing.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  <script src="../static/vendor/appear/jquery.appear.js"></script>
+  <script src="../static/vendor/knob/jquery.knob.js"></script>
+  <script src="../static/vendor/parallax/parallax.js"></script>
+  <script src="../static/vendor/wow/wow.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
+  <script src="../static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+</body>
+
+</html>

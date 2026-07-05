@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERBULLYING LANGUAGE DETECTION
+</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('../static/pic.jpg');background-size:100%">
+<nav class="navbar navbar-inverse" style="background:#0C3056">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a style="color:#FFF" class="navbar-brand" href="/home" style="text-transform: capitalize;font-size:25px;">RESUME SCREENING
+ </a>
+    </div>
+    <ul class="nav navbar-nav">
+    
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a style="color:#FFF"  href="/" style="font-size:18px;"><span class="glyphicon glyphicon-log-in"></span> LOGOUT</a></li>
+    </ul>
+  </div>
+</nav>
+<div style="background: #BAD3EE;width: 60%;margin: 0 auto;padding: 20px 50px 50px;" >
+
+    <div class="container mt-5">
+        <h4 class="mb-4">Enter the Message</h4>
+       <form action="{{ url_for('predict') }}" method="POST">
+                <input type="text" class="form-control" name="name" placeholder="Name" required><br/>
+                <input type="email" class="form-control" name="email" placeholder="Email" required><br/>
+                <input type="tel" class="form-control" name="phone" placeholder="Phone" pattern="[0-9]{10}" required><br/>
+                <textarea class='form-control' name="message" rows="5" cols="75" placeholder="Message" required></textarea><br/>
+                <input type="submit" class="btn btn-primary" value="PREDICT THE MESSAGE">
+         </form>
+      
+    </div>
+</div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

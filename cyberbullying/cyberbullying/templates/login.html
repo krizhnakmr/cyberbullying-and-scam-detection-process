@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('../static/pic1.png');background-size:100%">
+<nav class="navbar" style="background:#0C3056;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/" style="text-transform: capitalize;font-size:25px;color:#FFF">CYBERBULLYING LANGAUAGE DETECTION
+</a>
+    </div>
+    <ul class="nav navbar-nav">
+    
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/register" style="font-size:18px;color:#FFF"><span class="glyphicon glyphicon-log-in"></span> Register</a> &nbsp;<a href="/login" style="font-size:18px;color:#FFF"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+ <div class="container mt-5" style="background: #BAD3EE !important;padding: 50px;">
+       <h2 class="mt-5 mb-4">User Login</h2>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="login_username">Username:</label>
+                <input type="text" class="form-control" id="login_username" name="login_username">
+            </div>
+            <div class="form-group">
+                <label for="login_password">Password:</label>
+                <input type="password" class="form-control" id="login_password" name="login_password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+</div>
+
+</body>
+</html>
